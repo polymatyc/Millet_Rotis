@@ -3,222 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AS-SUFRA | Premium Healthy Millet Rotis</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #fafaf8;
-      --text: #1f2933;
-      --muted: #6b7280;
-      --accent: #2f855a;
-      --card: #ffffff;
-      --shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(8px);
-      z-index: 100;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-    }
-
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 16px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      font-size: 14px;
-    }
-
-    .hero {
-      max-width: 1200px;
-      margin: auto;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      color: var(--muted);
-      margin-bottom: 20px;
-      font-size: 18px;
-    }
-
-    .cta {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 14px 28px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: var(--shadow);
-    }
-
-    .section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    .section h3 {
-      font-size: 32px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-
-    .card:hover img {
-      transform: scale(1.08);
-    }
-
-    .card-body {
-      padding: 16px;
-      text-align: center;
-    }
-
-    .price {
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    footer {
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 14px;
-      color: var(--muted);
-    }
-  </style>
+  <title>AS-SUFRA | Premium Millet Rotis</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <div class="nav">
-    <h1>AS-SUFRA</h1>
-    <ul>
-      <li>Menu</li>
-      <li>Blog</li>
-      <li>About</li>
-      <li>Instagram</li>
-    </ul>
-  </div>
+<header class="navbar">
+  <div class="logo">AS-SUFRA</div>
+  <nav>
+    <a href="#">Menu</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+    <a href="#">Instagram</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <h2>Fresh. Healthy. Millet Rotis.</h2>
-  <p>Premium daily rotis for modern, health-first lifestyles. Just ₹20.</p>
-  <a class="cta" href="#">Order on WhatsApp</a>
+  <div class="hero-text">
+    <h1>Daily-made premium rotis</h1>
+    <p>For modern, health-conscious lifestyles. <strong>Just ₹20 per roti.</strong></p>
+
+    <div class="badge">🌾 Fresh Millet Rotis</div>
+
+    <a class="cta" href="https://wa.me/917045465332">Order on WhatsApp</a>
+  </div>
 </section>
 
-<section class="section">
-  <h3>Our Rotis</h3>
+<section class="products">
+  <h2>Our Rotis</h2>
 
-  <div class="products">
+  <div class="grid">
 
     <div class="card">
-      <img src="assets/images/jowar.png" alt="Jowar Roti">
-      <div class="card-body">
-        <h4>Jowar Roti</h4>
-        <div class="price">₹20</div>
+      <div class="image-box">
+        <img src="images/jowar.png" alt="Jowar Roti">
       </div>
+      <h3>Jowar Roti</h3>
+      <p class="price">₹20</p>
     </div>
 
     <div class="card">
-      <img src="assets/images/bajri.png" alt="Bajri Roti">
-      <div class="card-body">
-        <h4>Bajri Roti</h4>
-        <div class="price">₹20</div>
+      <div class="image-box">
+        <img src="images/bajra.png" alt="Bajra Roti">
       </div>
+      <h3>Bajra Roti</h3>
+      <p class="price">₹20</p>
     </div>
 
     <div class="card">
-      <img src="assets/images/makkai.png" alt="Makkai Roti">
-      <div class="card-body">
-        <h4>Makkai Roti</h4>
-        <div class="price">₹20</div>
+      <div class="image-box">
+        <img src="images/multigrain.png" alt="Multigrain Roti">
       </div>
+      <h3>Multigrain Roti</h3>
+      <p class="price">₹20</p>
     </div>
 
     <div class="card">
-      <img src="assets/images/multigrain.png" alt="Multigrain Roti">
-      <div class="card-body">
-        <h4>Multigrain Roti</h4>
-        <div class="price">₹20</div>
+      <div class="image-box">
+        <img src="images/makkai.png" alt="Makkai Roti">
       </div>
+      <h3>Makkai Roti</h3>
+      <p class="price">₹20</p>
     </div>
 
     <div class="card">
-      <img src="assets/images/rice.png" alt="Rice Roti">
-      <div class="card-body">
-        <h4>Rice Roti</h4>
-        <div class="price">₹20</div>
+      <div class="image-box">
+        <img src="images/rice.png" alt="Rice Roti">
       </div>
+      <h3>Rice Roti</h3>
+      <p class="price">₹20</p>
+    </div>
+
+    <div class="card">
+      <div class="image-box">
+        <img src="images/paratha.png" alt="Wheat Paratha">
+      </div>
+      <h3>Wheat Paratha</h3>
+      <p class="price">₹25</p>
     </div>
 
   </div>
 </section>
 
+<section class="combo">
+  <h2>Yummiest Food Combos with our Rotis</h2>
+  <p class="muted">Weekly-curated pairings · AI-designed · Nutrition-backed</p>
+</section>
+
 <footer>
-  © 2026 AS-SUFRA · Ancient Grains for Modern Lives
+  <p>© 2026 AS-SUFRA · Made fresh every morning</p>
 </footer>
 
-<script>
-  console.log("AS-SUFRA is live 🚀");
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
